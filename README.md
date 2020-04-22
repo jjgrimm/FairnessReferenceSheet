@@ -36,7 +36,7 @@ The first concept that is critical to understand is **fairness**. Generally an o
 
 ## Machine Learning (ML) Specific Terminology
 
-**Binary Classifier** - While there are many types of classifiers and methods for developing them, a binary classifier simply takes an input and decides if that input should receive a positive or negative classification based on some predefined rules.  
+**Binary Classifier** - While there are many types of classifiers and methods for developing them, a binary classifier simply takes an input and decides if that input should receive a positive or negative classification based on some predefined rules. Often times rather than just deciding positive or negative, a classifier may assign a probability that some input should be labeled positive.   
 
 **Supervised Learning** - The task of learning a function that maps an input to an output based on given example input-output pairings. The function is learned from a created training dataset and then evaluated on a different testing dataset.
 
@@ -45,7 +45,7 @@ The first concept that is critical to understand is **fairness**. Generally an o
 
 **Demographic Parity** - A model of group fairness has demographic parity if the difference in **TPR** among different demographics is less than a chosen threshold (accounting for expected error).
 
-**Disparate Impact** - A form of systematic discrimination that adversely affects a **protected class**.
+**Disparate Impact** - A form of systematic discrimination that unintentionally but adversely affects a **protected class**.
  
 **Equalized Odds** - Also known as separation or positive rate parity, can be used when the classifier is unknown. This states that the model should accomplish both **TPP** and **FPP**. 
 
@@ -73,3 +73,8 @@ The first concept that is critical to understand is **fairness**. Generally an o
 
 **Protected Attribute** - A protected attribute is any attribute of an individual that is legally protected by United States federal anti-discrimination law. This includes race, religion, national origin, age, sex, and more. 
 
+## Group versus Individual - Fairness Discussion 
+
+Group and individual fairness both come with inherent flaws. While it is easy to define group fairness, some notions of fair begin to contradict each other. As discussed with statistical parity, it is sometimes the case that it is actually impossible for groups to be equal across all considered statistics. Then it becomes of the issue of deciding which notion or statistic is more important than the other, and there is no easy answer. On the flip side, individual fairness guarantees strong fairness but comes with a different set of drawbacks. It is impractical to compare each individual to every other individual when dealing with large populations. Beyond practicality, it is also very difficult and subjective to decide that two individuals are similar and we may never have a concrete definition on what is similar. 
+
+Where do we go from here? Attempts have been made to combine group and individual fairness, and to minimize the drawbacks of both concepts on their own. Ultimately, we are attempting to quantify a very abstract idea so these efforts will take time to reach notions of fairness that people can agree on. Until then, it is important that as a society we remain cautious of allowing "fair" machine learning models into highly contextual and human situations. 
