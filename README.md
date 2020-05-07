@@ -78,3 +78,15 @@ The first concept that is critical to understand is **fairness**. Generally an o
 Group and individual fairness both come with inherent flaws. While it is easy to define group fairness, some notions of fair begin to contradict each other. As discussed with statistical parity, it is sometimes the case that it is actually impossible for groups to be equal across all considered statistics. Then it becomes of the issue of deciding which notion or statistic is more important than the other, and there is no easy answer. On the flip side, individual fairness guarantees strong fairness but comes with a different set of drawbacks. It is impractical to compare each individual to every other individual when dealing with large populations. Beyond practicality, it is also very difficult and subjective to decide that two individuals are similar and we may never have a concrete definition on what is similar. 
 
 Where do we go from here? Attempts have been made to combine group and individual fairness, and to minimize the drawbacks of both concepts on their own. Ultimately, we are attempting to quantify a very abstract idea so these efforts will take time to reach notions of fairness that people can agree on. Until then, it is important that as a society we remain cautious of allowing "fair" machine learning models into highly contextual and human situations. 
+
+## References
+
+Agarwal, Beygelzimer, Dudík, Langford, Wallach. (Jul 2018). A Reductions Approach to Fair Classification. Retrieved from https://arxiv.org/pdf/1803.02453
+
+Cynthia Dwork and Christina Ilvento. 2018. Fairness under composition. CoRR arXiv:1806.06122.
+
+Heidari, Krause, Srivastava. (Aug 2019). Mathematical Notions vs. Human Perception of Fairness: A Descriptive Approach to Fairness for Machine Learning.
+
+Jung, Kearns, Neel, Roth, Stapleton, Wu. (May 2019). Eliciting and Enforcing Subjective Individual Fairness. Retrieved from https://arxiv.org/abs/1905.10660
+
+Rudra, Atri. (May 2020). Algorithms Have Arrived. Retrieved from http://www-student.cse.buffalo.edu/~atri/algo-and-society/spr20/index.html
